@@ -38,4 +38,4 @@ plt.show()
 
 fx=lambda x:((-1/15)*x**5)+((3/2)*x**4)-((37/3)*x**3)+(46*x**2)-((771/10)*x)+59
 I=integrate.quad(fx,point1[0],point2[0])
-print("The intigral is"+ I[0])
+print((I[0]))
