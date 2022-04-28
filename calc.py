@@ -14,9 +14,12 @@ def f(x):
 
 #find all values where Yw==f(x)
 xPoints=np.arange(0,8,0.001)
-yPoints=[]
+yPoints=np.array(len(xPoints),dtype=np.single)
 for x in xPoints:
-    yPoints.append(round(f(x),3))
+    np.append(yPoints,round(f(x),3))
+inds=np.where(yPoints-Yw==Yw)
+for i in np.array(inds):
+    print(i)
 #values of ints from desmos
 # (0.943,18),(6.464,18)
 point1=[0.943,18]
