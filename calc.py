@@ -19,8 +19,8 @@ for x in xPoints:
     yPoints.append(round(f(x),3))
 #values of ints from desmos
 # (0.943,18),(6.464,18)
-point1=[0.943,18]
-point2=[6.464,18]
+point1=[1,18]
+point2=[6.,18]
 yw=np.empty(len(xPoints))
 yw.fill(Yw)
 
